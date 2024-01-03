@@ -22,5 +22,5 @@ from users.views import user_main_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('games/', games),
-    path('r/',user_main_page)
+    path('users/',user_main_page)
 ]
