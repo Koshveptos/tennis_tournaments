@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from games.views import games
+from users.views import user_main_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('games/', games)
+    path('games/', games),
+    path('r/',user_main_page)
 ]
